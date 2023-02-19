@@ -8,6 +8,8 @@ import matplotlib
 #Stablish the forever-loop to keep the script working
 while True:
 
+    pauseTime = 60
+
     #We use this in case we want to manage the quantity of data we use.
     def deleteData(Data, period):
         if Data[period]:
@@ -76,4 +78,4 @@ while True:
     df.title('Bollinger Bands using Python')
     df.show()
 
-    time.sleep(60)
+    time.sleep(pauseTime)
